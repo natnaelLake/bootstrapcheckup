@@ -9,28 +9,33 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container-fluid">
             <a class = 'navbar-brand' href="#">
                 <img src="287677588_561545558716720_962843881644276446_n.jpg" alt="logo Photo" width = "40px" class = "rounded-pill">
             </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class = " container nav nav-pills" role = "tablist">
-                <li class = "nav-item"> 
-                    <a href="" class = "nav-link active" data-bs-toggle="tab" href = "#home">Home</a>
-                </li>
-                <li class = "nav-item">
-                    <a class = "nav-link" data-bs-toggle = "pill" href="#menu2">Menu 1</a>
-                </li>
-                <li class = 'nav-item'>
-                    <a class = "nav-link" data-bs-toggle = "pill" href="#menu1">Menu 2</a>
-                </li>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="text" placeholder="Search">
+              <button class="btn btn-primary" type="button">Search</button>
+            </form>
           </div>
         </div>
       </nav>
-  
+   
 </body>
 </html>
