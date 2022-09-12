@@ -133,6 +133,15 @@
           </div>
         </div>
       </div>
+      <br>
+      <a href="#" title="Header" data-bs-toggle="popover" data-bs-placement="top" data-content="Content">Top</a>
+      <button type = "button" class = " btn btn-danger" data-bs-toggle = "popover" title = "Popover Header" data-bs-content = "Some content inside the popover">Toggle popover</button>
+      <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl)
+        })
+        </script>
       <div class="container mt-3">
         <h3>Tooltip Positioning</h3>
         <p>The data-bs-placement attribute specifies the tooltip position.</p>
