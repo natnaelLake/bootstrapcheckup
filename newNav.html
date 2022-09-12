@@ -84,7 +84,7 @@
                 <h3>New York</h3>
                 <p>We love the Big Apple!</p>
               </div> 
-            <img src="272438130_488772416104912_8077946594690601319_n.jpg" alt="New York" class="d-block" style="width:100%">
+            <img src="272438130_488772416104912_8077946594690601319_n.jpg" alt="New York" class="d-block" style="width: 100%">
           </div>
         </div>
         
@@ -96,10 +96,39 @@
           <span class="carousel-control-next-icon"></span>
         </button>
       </div>
-      
-      <div class="container-fluid mt-3">
-        <h3>Carousel Example</h3>
-        <p>The following example shows how to create a basic carousel with indicators and controls.</p>
+      <div class="container mt-3">
+        <h3>Modal Example</h3>
+        <p>Click on the button to open the modal.</p>
+        
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+          Open modal
+        </button>
       </div>
+      
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+      
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Modal Heading</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+      
+            <!-- Modal body -->
+            <div class="modal-body">
+              Modal body..
+            </div>
+      
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+      
+          </div>
+        </div>
+      </div>
+
 </body>
 </html>     
