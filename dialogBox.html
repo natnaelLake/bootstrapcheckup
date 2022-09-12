@@ -133,6 +133,20 @@
           </div>
         </div>
       </div>
-
+      <div class="container mt-3">
+        <h3>Tooltip Positioning</h3>
+        <p>The data-bs-placement attribute specifies the tooltip position.</p>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Hooray!">Top</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Hooray!">Bottom</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="left" title="Hooray!">Left</a>
+        <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Hooray!">Right</a>
+      </div>
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" title="Hooray!">Hover over me!</button> -->
+        <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+          </script>
 </body>
 </html>     
